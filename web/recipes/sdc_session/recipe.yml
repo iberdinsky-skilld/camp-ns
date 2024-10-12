@@ -1,0 +1,4 @@
+name: 'SDC Session'
+type: 'Site'
+recipes:
+  - core/recipes/standard
