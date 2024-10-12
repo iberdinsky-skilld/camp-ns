@@ -1,0 +1,8 @@
+name: SDC Session
+type: theme
+description: 'Drupal Camp Session Theme'
+core_version_requirement: '>=11'
+base theme: stable9
+libraries:
+  - core/normalize
+  - sdc_session/global

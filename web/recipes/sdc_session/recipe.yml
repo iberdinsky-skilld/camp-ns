@@ -2,3 +2,10 @@ name: 'SDC Session'
 type: 'Site'
 recipes:
   - core/recipes/standard
+install:
+  - sdc_session
+config:
+  actions:
+    system.theme:
+      simple_config_update:
+        default: 'sdc_session'
