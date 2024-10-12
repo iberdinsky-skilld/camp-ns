@@ -5,3 +5,6 @@ start:
 
 help:
 	php web/core/scripts/drupal quick-start --help
+
+cex:
+	./vendor/bin/drush dcer node  --folder=recipes/sdc_session/content

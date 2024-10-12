@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 443c2c6d-ac8f-49b3-a4fc-84ed480ecfc5
+  bundle: article
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'SDC with Twig'
+  created:
+    -
+      value: 1728725687
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  body:
+    -
+      value: '<p>Lorem ipsum dolor sit amet, eum mollis eruditi id, te velit molestie eam. Ea pri consul partem, commune perpetua has ea. No consetetur temporibus vim, suas erroribus per at, ne per iusto sonet iracundia. Tamquam offendit id nam, velit vidisse an sed.</p>'
+      format: basic_html
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1728726187
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0

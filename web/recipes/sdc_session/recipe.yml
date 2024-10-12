@@ -3,6 +3,7 @@ type: 'Site'
 recipes:
   - core/recipes/standard
 install:
+  - default_content
   - sdc_session
 config:
   actions:
