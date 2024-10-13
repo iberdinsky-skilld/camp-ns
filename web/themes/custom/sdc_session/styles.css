@@ -1,10 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 html {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: Helvetica, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.dialog-off-canvas-main-canvas {
+  font-size: 1.25rem;
+  color: #333;
 }
 
 #block-sdc-session-site-branding {
@@ -13,10 +25,23 @@ html {
 
 .layout-container {
   > header {
-    padding: 0.5rem;
+    padding: 2rem 5vw;
   }
 
   > main {
     padding-inline: 5vw;
+  }
+}
+
+.feed-icon {
+  display: none;
+}
+
+/* small trick */
+
+.views-row > article:has([data-component-id="sdc_session:card"]) {
+  > footer,
+  > h2 {
+    display: none;
   }
 }

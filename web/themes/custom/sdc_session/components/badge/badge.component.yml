@@ -1,36 +1,24 @@
-# This is so your IDE knows about the syntax for fixes and autocomplete.
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-# The human readable name.
 name: Badge
-
-# Status can be: "experimental", "stable", "deprecated", "obsolete".
 status: experimental
+group: DrupalCamp
 
-# Schema for the props. We support www.json-schema.org. Learn more about the
-# syntax there.
 props:
-  # Props are always an object with keys. Each key is a variable in your
-  # component template.
   type: object
-
   properties:
     icon:
       type: string
-      description: Icon Name
+      title: Icon Name
       enum:
-        - knife
-        - timer
-        - serves
         - difficulty
+        - knife
+        - serves
+        - timer
+
 slots:
-  label:
-    type: string
-    description: Label text
-    examples:
-      - Label text
   text:
     type: string
-    description: Text
+    title: Text
     examples:
-      - Text
+      - Hello all!

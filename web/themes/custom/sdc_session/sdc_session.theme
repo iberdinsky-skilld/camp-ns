@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Implements hook_preprocess_field().
+ */
+// function sdc_session_preprocess_field__field_tags(&$variables) {
+//   foreach ($variables['element']['#items'] as $delta => $item) {
+//     $term = $item->entity;
+//     if ($term) {
+//       $variables['items'][$delta]['content'] = [
+//         '#type' => 'component',
+//         '#component' => 'sdc_session:badge',
+//         '#props' => [
+//           'icon' => ['knife', 'timer', 'serves', 'difficulty'][rand(0, 3)],
+//         ],
+//         '#slots' => [
+//           'label' => 'Tag',
+//           'text' => $term->label(),
+//         ],
+//       ];
+//     }
+//   }
+// }

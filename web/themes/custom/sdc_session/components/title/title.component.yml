@@ -1,23 +1,20 @@
-# This is so your IDE knows about the syntax for fixes and autocomplete.
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-# The human readable name.
 name: Title
-
-# Status can be: "experimental", "stable", "deprecated", "obsolete".
 status: experimental
+group: DrupalCamp
 
-# Schema for the props. We support www.json-schema.org. Learn more about the
-# syntax there.
 props:
   type: object
   properties:
     label:
       type: string
+      title: Title label
+      examples:
+        - Hello from title!
     html_tag:
       type: string
       title: HTML tag for title
-      # Limit the available options by using enums.
       enum:
         - h1
         - h2
@@ -26,13 +23,5 @@ props:
         - h5
         - h6
         - span
-      # Provide a default value
       default: h2
 
-slots:
-  title_prefix:
-    type: object
-    title: Title prefix
-  title_suffix:
-    type: object
-    title: Title suffix

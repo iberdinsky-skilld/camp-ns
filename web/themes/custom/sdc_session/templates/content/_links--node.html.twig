@@ -1,0 +1,24 @@
+{% if links -%}
+
+  <ul{{attributes.addClass('card__links')}}>
+    {%- for item in links -%}
+      <li{{item.attributes}}>
+
+        {% embed "sdc_session:read-more" with {
+          attributes: create_attribute({'class': ['card__read-more']}),
+          read_more: item.text,
+          url: item.link['#url'].toString(),
+          item,
+        } only %}
+          {% block a11y %}
+            {{ item.text }}
+          {% endblock %}
+          {% block text %}
+            {{ read_more }}
+          {% endblock %}
+        {% endembed %}
+
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif %}

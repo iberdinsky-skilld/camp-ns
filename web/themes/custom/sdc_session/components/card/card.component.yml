@@ -1,33 +1,20 @@
-# This is so your IDE knows about the syntax for fixes and autocomplete.
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-# The human readable name.
 name: Card
-
-# Status can be: "experimental", "stable", "deprecated", "obsolete".
 status: experimental
-
-# Schema for the props. We support www.json-schema.org. Learn more about the
-# syntax there.
+group: DrupalCamp
 props:
   type: object
   properties:
     html_tag:
       type: string
       title: HTML tag for wrapper
-
-      # Limit the available options by using enums.
       enum:
         - article
         - div
-      # Provide a default value
       default: article
 
-# Slots always hold arbitrary markup. We know that beforehand, so no need for
-# a schema for slots.
 slots:
-  # The key is the name of the slot. In your template you will use
-  # {% block content %}.
   content:
     title: Content
     required: true
@@ -44,19 +31,29 @@ thirdPartySettings:
           html_tag: "div"
           content:
             - type: component
-              component: "umami:title"
+              component: "sdc_session:title"
               args:
                 label: test
             - type: component
-              component: "umami:read-more"
+              component: "sdc_session:read-more"
               args:
                 text: test
+                url: '#'
       preview2:
-        title: Preview2
+        title: Preview 2
         args:
           html_tag: "div"
           content:
             - type: component
-              component: "umami:title"
+              component: "sdc_session:title"
               args:
-                label: test2
+                label: test 2
+                extra_classes:
+                  - 'card__title'
+            - type: component
+              component: "sdc_session:read-more"
+              args:
+                text: test
+                url: '#'
+                extra_classes:
+                  - 'card__read-more'

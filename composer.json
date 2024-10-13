@@ -8,24 +8,32 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
         "chat": "https://www.drupal.org/node/314178"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "drupal-experience-builder": {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/project/experience_builder.git"
+        },
+        "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
-    ],
+    },
     "require": {
         "composer/installers": "^2.0",
         "drupal/core-composer-scaffold": "^11.0",
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
         "drupal/default_content": "^2.0@alpha",
+        "drupal/experience_builder": "@dev",
+        "drupal/layout_options": "^1.6",
+        "drupal/sdc_styleguide": "^1.1",
+        "drupal/ui_suite_daisyui": "^4.0@alpha",
         "drush/drush": "^13.3"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
