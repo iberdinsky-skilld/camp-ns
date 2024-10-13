@@ -4,6 +4,10 @@ _meta:
   uuid: 443c2c6d-ac8f-49b3-a4fc-84ed480ecfc5
   bundle: article
   default_langcode: en
+  depends:
+    0b815e00-86b7-4ce1-a147-601760febb86: taxonomy_term
+    7be4d2ca-0e79-43dc-9be7-89f901c4645e: taxonomy_term
+    aa8262b9-529a-4531-8659-fecf30f88b24: taxonomy_term
 default:
   revision_uid:
     -
@@ -16,7 +20,7 @@ default:
       target_id: 1
   title:
     -
-      value: 'SDC with Twig'
+      value: 'Using Single-Directory Components'
   created:
     -
       value: 1728725687
@@ -35,14 +39,21 @@ default:
       langcode: en
   body:
     -
-      value: '<p>Lorem ipsum dolor sit amet, eum mollis eruditi id, te velit molestie eam. Ea pri consul partem, commune perpetua has ea. No consetetur temporibus vim, suas erroribus per at, ne per iusto sonet iracundia. Tamquam offendit id nam, velit vidisse an sed.</p>'
+      value: "<p>Components are an important part of Drupal's theming system and combine HTML, CSS, and JavaScript in a customizable and reusable way. The goal is to make it easy to find, and work with, all of the assets that make up an element you're seeing on the page.</p>"
       format: basic_html
       summary: ''
   comment:
     -
       status: 2
       cid: 0
-      last_comment_timestamp: 1728726187
+      last_comment_timestamp: 1729010150
       last_comment_name: ''
       last_comment_uid: 1
       comment_count: 0
+  field_tags:
+    -
+      entity: 0b815e00-86b7-4ce1-a147-601760febb86
+    -
+      entity: 7be4d2ca-0e79-43dc-9be7-89f901c4645e
+    -
+      entity: aa8262b9-529a-4531-8659-fecf30f88b24

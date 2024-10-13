@@ -1,5 +1,15 @@
+{%
+  set classes = [
+    'title',
+  ]
+%}
+
+{% if extra_classes is iterable %}
+  {% set classes = classes|merge(extra_classes) %}
+{% endif %}
+
 {% block title_prefix %}{% endblock %}
-<{{ html_tag|default('h2') }}{{ attributes.addClass('umami-title') }}>
+<{{ html_tag|default('h2') }}{{ attributes.addClass(classes) }}>
   {{ label }}
 </{{ html_tag|default('h2') }}>
 {% block title_suffix %}{% endblock %}

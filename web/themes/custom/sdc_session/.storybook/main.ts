@@ -7,7 +7,7 @@ const config: StorybookConfig = {
       name: "storybook-addon-sdc",
       options: {
         sdcStorybookOptions: {
-          namespace: "umami"
+          namespace: "sdc_session"
         },
       }
     },
@@ -17,5 +17,9 @@ const config: StorybookConfig = {
     name: "@storybook/html-vite",
     options: {},
   },
+  previewHead: (head) => `
+    ${head}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+  `,
 };
 export default config;

@@ -1,11 +1,12 @@
-<div{{ attributes.addClass('umami-badge') }}>
-  <div class="umami-badge__container">
+<div{{ attributes.addClass('badge') }}>
+  <div class="badge__container">
     {% if icon %}
-      <div class="umami-badge__icon">
+      <div class="badge__icon">
         {{ source(componentMetadata.path ~ '/icons/' ~ icon|default('knife') ~ '.svg') }}
       </div>
     {% endif %}
-    <div class="umami-badge__label">{% block label %}{{ label }}{% endblock %}</div>
-    {% block text %}{{ text }}{% endblock %}
+    <span class="badge__text">
+      {% block text %}{{- text -}}{% endblock %}
+    </span>
   </div>
 </div>

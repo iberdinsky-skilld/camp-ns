@@ -8,3 +8,6 @@ help:
 
 cex:
 	./vendor/bin/drush dcer node  --folder=recipes/sdc_session/content
+
+cr:
+	./vendor/bin/drush cr
