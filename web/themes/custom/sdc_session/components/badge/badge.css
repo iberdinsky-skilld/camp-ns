@@ -1,42 +1,24 @@
-.umami-badge__container {
+.badge__container {
   display: flex;
-  align-items: center;
   gap: 0.5rem;
+  align-items: center;
+  padding-block: 0.25em;
 }
 
-/* Large */
-@media screen and (min-width: 60rem) {
-  /* 960px */
-  .umami-badge__container {
-    flex-direction: column;
-    gap: 0;
-    width: 100%;
-    padding-block: 0.96em;
-  }
-}
-
-.umami-badge__icon {
+.badge__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
 }
 
-/* Large */
-@media screen and (min-width: 60rem) {
-  /* 960px */
-  .umami-badge__icon {
-    align-items: start;
-    width: 56px;
-    height: 64px;
-  }
+.badge__text {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
 }
 
-.umami-badge__label {
-  font-weight: bold;
-}
-
-.umami-badge__label::after {
-  content: ":";
+.badge__text a {
+  text-decoration: none;
+  color: #000;
 }

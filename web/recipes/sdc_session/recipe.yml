@@ -4,7 +4,10 @@ recipes:
   - core/recipes/standard
 install:
   - default_content
+  - layout_builder
+  - layout_options
   - sdc_session
+  - sdc_styleguide
 config:
   actions:
     system.theme:
